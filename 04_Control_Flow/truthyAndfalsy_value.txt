@@ -1,0 +1,79 @@
+/*
+falsy values:-
+
+ - false, 0, "", null, undefined, NaN , BigInt 0n, -0, -0n, "" // 
+ - falsy values are values that evaluate to false in a boolean context.     
+- falsy values are values that are considered false when evaluated in a boolean context.
+- In JavaScript, the following values are considered falsy:
+    - false: The boolean value false itself.
+    - 0: The number zero.
+    - "": An empty string.
+    - null: A special value representing the absence of any object value.
+    - undefined: A variable that has been declared but has not yet been assigned a value.
+    - NaN: A special value representing "Not-a-Number".
+    - BigInt 0n: A BigInt value representing zero.
+    - -0: Negative zero.
+    - -0n: Negative zero as a BigInt.
+- "" : An empty string.
+
+
+truthy values:- 
+    - "0" : A string containing a single zero character.
+    - "false" : A string containing the word "false".
+    - []: An empty array.
+    - {}: An empty object.
+    - 42: A non-zero number.
+    - "hello": A non-empty string.
+    - [1, 2, 3]: An array with elements.
+    - {a: 1}: An object with properties.
+    - function(){}: A function.
+    - Symbol(): A unique and immutable data type introduced in ES6.
+    
+    - All values that are not falsy are considered truthy.
+    - This includes non-empty strings, non-zero numbers, objects, arrays, and functions.
+    - For example, the string "hello", the number 42, and the array [1, 2, 3] are all truthy values.
+   ### In JavaScript, the following values are considered truthy:
+    - true: The boolean value true itself.
+    - Non-zero numbers: Any number other than zero (e.g., 1, -1, 3.14).
+    - Non-empty strings: Any string that is not empty (e.g., "hello", "0").
+    - Objects: Any object, including arrays and functions.
+    - Arrays: Any array, even if it is empty (e.g., []). 
+    - Functions: Any function, even if it does not return a value.
+    - Symbols: A unique and immutable data type introduced in ES6.
+    - BigInt: A numeric data type that can represent integers with arbitrary precision.
+    - Infinity: A special value representing positive infinity.
+
+  Nullish Coalescing operator (??) : null undefined
+    -The nullish coalescing operator (??) is a logical operator introduced in ES11 (ECMAScript 2020).
+    -It is used to provide a default value when the left-hand operand is null or undefined.
+    -syntax: 
+         let result = value1 ?? value2;
+
+    **If value1 is not null or undefined, result will be value1.
+      If value1 is null or undefined, result will be value2.
+
+
+1-Checks for null or undefined Only:
+   Unlike the logical OR operator (||),
+   which checks for falsy values, ?? only checks for null or undefined.
+
+2-Default Value Assignment:
+   It is commonly used to assign default values to variables.
+
+3-Does Not Consider Falsy Values:
+   Values like false, 0, NaN, or an empty string ("") are not treated as null or undefined.
+
+ example:
+   let name = null;
+let defaultName = "Guest";
+let result = name ?? defaultName;
+
+console.log(result); // Output: Guest
+
+
+
+ternary operator
+
+const inceteaPrice = 100;
+iceteaPrice <= 80 ? console.log("less than 80") : console.log("more than 80);
+*/
